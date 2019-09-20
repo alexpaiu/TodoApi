@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{75C98EE7-2A11-4D93-A774-66860ECDAE59}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/index.html">
+    <Files>
+      <File FileName="wwwroot/index.html" Line="106" Column="9" />
+      <File FileName="Views/Todo/GetAll.cshtml" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="wwwroot/site.js" Line="128" Column="37" />
+      <File FileName="Startup.cs" Line="15" Column="1" />
+      <File FileName="wwwroot/style.css" Line="1" Column="1" />
+      <File FileName="Controllers/TodoController.cs" Line="90" Column="26" />
+      <File FileName="README.md" Line="1" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="TodoApi.code-workspace" />
+      <File FileName="TodoApi.csproj" />
+      <File FileName="Migrations/20190919155013_CreatedAt.cs" Line="25" Column="1" />
+      <File FileName="Migrations/20180703124355_initial.cs" Line="17" Column="69" />
+      <File FileName="Migrations/20180703124355_initial.Designer.cs" />
+      <File FileName="Controllers/ValuesController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TodoApi" expanded="True">
+            <Node name="TodoApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Todo" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="index.html" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TodoApi PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

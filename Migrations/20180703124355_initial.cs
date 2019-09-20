@@ -15,6 +15,7 @@ namespace TodoApi.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     Name = table.Column<string>(nullable: true),
                     IsComplete = table.Column<bool>(nullable: false)
+        
                 },
                 constraints: table =>
                 {
