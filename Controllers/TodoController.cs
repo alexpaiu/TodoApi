@@ -20,7 +20,7 @@ namespace TodoApi.Controllers
 
             if (_context.TodoItems.Count() == 0)
             {
-                _context.TodoItems.Add(new TodoItem { Name = "Buy Chocolate" });
+                _context.TodoItems.Add(new TodoItem { Name = "Buy Chocolate" ,CreatedAt = DateTime.Now });
                 _context.SaveChanges();
             }
         }
@@ -91,11 +91,17 @@ namespace TodoApi.Controllers
         [HttpPost]
         public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem item)
         {
+            item.CreatedAt = DateTime.Now;
             _context.TodoItems.Add(item);
+            Console.WriteLine(item);
+            Console.WriteLine("*88888888888");
+
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetTodoItem), new { id = item.Id }, item);
         }
+
+
         // DELETE: api/Todo/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTodoItem(long id)

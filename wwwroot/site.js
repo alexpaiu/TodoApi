@@ -54,8 +54,11 @@ function getData() {
               $("<button>Delete</button>").on("click", function() {
                 deleteItem(item.id);
               })
-            )
-          );
+          )
+              )
+
+              .append($("<td></td>").text(item.createdAt))
+         
 
         tr.appendTo(tBody);
       });
