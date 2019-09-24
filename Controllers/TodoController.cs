@@ -17,10 +17,13 @@ namespace TodoApi.Controllers
         public TodoController(TodoContext context)
         {
             _context = context;
+            var src = DateTime.Now;
+            var dateTime = new DateTime(src.Year, src.Month, src.Day, src.Hour, src.Minute, 0);
+
 
             if (_context.TodoItems.Count() == 0)
             {
-                _context.TodoItems.Add(new TodoItem { Name = "Buy Chocolate" ,CreatedAt = DateTime.Now });
+                _context.TodoItems.Add(new TodoItem { Name = "Buy Chocolate" ,CreatedAt = dateTime });
                 _context.SaveChanges();
             }
         }
@@ -78,8 +81,9 @@ namespace TodoApi.Controllers
             {
                 return BadRequest();
             }
-
+           
             _context.Entry(item).State = EntityState.Modified;
+            item.CreatedAt = DateTime.Now;
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -91,10 +95,12 @@ namespace TodoApi.Controllers
         [HttpPost]
         public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem item)
         {
-            item.CreatedAt = DateTime.Now;
+            
+
+            var src = DateTime.Now;
+            item.CreatedAt = new DateTime(src.Year, src.Month, src.Day, src.Hour, src.Minute, 0);
             _context.TodoItems.Add(item);
-            Console.WriteLine(item);
-            Console.WriteLine("*88888888888");
+
 
             await _context.SaveChangesAsync();
 

@@ -8,6 +8,7 @@
     <Folder Include="wwwroot\" />
     <Folder Include="Views\" />
     <Folder Include="Views\Todo\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\style.css" />
+    <None Remove="Pages\home.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\home.html">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 </Project>

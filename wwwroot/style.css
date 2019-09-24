@@ -1,1 +1,94 @@
 ﻿
+input[type='submit'], button, [aria-label]
+{
+    cursor: pointer;
+}
+
+#spoiler {
+    display: none;
+}
+h3 {
+    font-family: Chalkduster, fantasy;
+    color: #d42115;
+    line-height: 6;
+}
+
+table {
+
+    font-family: Chalkduster, fantasy;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+th {
+    line-height: 2;
+    background-color: #fed948;
+    color: #d42115;
+}
+
+td {
+    border: 1px solid;
+    padding: 5px;
+    background-color : ghostwhite;
+}
+
+body {
+    background-image: url("https://content.thriveglobal.com/wp-content/uploads/2018/10/GettyImages-1060797334.jpg?w=1550");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p1 {
+    font-family: Chalkduster, fantasy;
+    line-height: 2;
+    color: #d42115;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+    .topnav a {
+        float: right;
+        font-family: Chalkduster, fantasy;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: #333;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #333;
+            color: white;
+        }
+.star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 2.8s;
+    animation: animat_show 2.8s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity : 0.5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
